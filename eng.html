@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPY</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header>
+        <div class="lang_toggler_wrapper">
+          <div class="lang_toggler" onclick="toggleModal()">
+            <p class="lang_toggler_active">EN |</p>
+
+            <p>РУ</p>
+          </div>
+        </div>
+        <div class="main_logo">
+          <img src="./assets/logo.svg" alt="" />
+        </div>
+      </header>
+      <div class="advatages_block">
+        <img
+          class="advatages_block_man"
+          src="./assets/images/advantages.svg"
+          alt=""
+        />
+        <img
+          class="advatages_block_el"
+          src="./assets/images/advantages-el.svg"
+          alt=""
+        />
+        <img
+          class="advatages_block_dollar"
+          src="./assets/images/adv-dollar.svg"
+          alt=""
+        />
+        <div class="blocks_title">
+          <h2>
+            Why <br />
+            <span>SPY — WhitePage</span>?
+          </h2>
+        </div>
+        <div class="advatages_block_content">
+          <div class="advatages_block_content_text">
+            <p>
+              The generator is built based on the study of the so-called
+              "spider" of Ads search engines. All the details that the spiders
+              scan and analyze data have been taken into account, and the AI is
+              also trained and keeps pace with the innovations of Ads
+              platforms.This is a unique product that is updated weekly! We have
+              also made adjustments based on consultations with Google Ads
+              moderators, making us a truly unique service!Both regular and
+              agency Google Ads accounts are available. With spending/without +
+              old.
+            </p>
+          </div>
+          <div class="advatages_block_content_card">
+            <h2>SPY — WhitePage:</h2>
+            <div class="advatages_block_content_card_cols">
+              <div>
+                <ul>
+                  <li>Creation for any theme</li>
+                  <li>100% unique</li>
+                  <li>Generation takes up to 40 seconds!</li>
+                  <li>All languages ​​of the World</li>
+                  <li>Unique code</li>
+                  <li>Privacy Policy</li>
+                  <li>Cookies</li>
+                  <li>Sending contact information</li>
+                  <li>Lots of templates</li>
+                  <li>The ability to name the file "index.html" in the bot</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>Block Mixing</li>
+                  <li>PHP & HTML</li>
+                  <li>Create up to 10 WhitePages at once</li>
+                  <li>Select the number of articles in WhitePage</li>
+                  <li>Indexing pages for increased trust in Ads</li>
+                  <li>Manual moderation is easy</li>
+                  <li>
+                    Stop keyword - a function for bypassing complex topics
+                  </li>
+                  <li>Price of one WhitePage is $0.69</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tg_test_block">
+        <img src="./assets/images/tg-test-bg.svg" alt="" />
+        <div class="tg_test_block_content">
+          <div class="blocks_title">
+            <h2>
+              JOIN TELEGRAM AND GET <br />
+              <span>3 FREE WhitePages</span>
+              FOR TEST!
+            </h2>
+          </div>
+          <div class="main_btn">
+            <a href="#"><button>GET</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel_block_wrapper">
+        <img
+          class="carousel_block_wrapper_bg"
+          src="./assets/images/carousel-bg.svg"
+          alt=""
+        />
+        <div class="carousel_block">
+          <div class="carousel_block_title">
+            <h2>
+              Some of the samples <br />
+              of our whitepages
+            </h2>
+          </div>
+          <div class="slider_wrapper">
+            <div class="custom_arrow custom_arrow_left custom-prev">
+              <img src="./assets/icons/arrow-left.svg" alt="" />
+            </div>
+            <div class="slider">
+              <div class="slider_item">
+                <img src="./assets/images/slider-1.png" alt="" />
+              </div>
+              <div class="slider_item">
+                <img src="./assets/images/slider-2.png" alt="" />
+              </div>
+              <div class="slider_item">
+                <img src="./assets/images/slider-3.png" alt="" />
+              </div>
+            </div>
+            <div class="custom_arrow custom_arrow_right custom-next">
+              <img src="./assets/icons/arrow-right.svg" alt="" />
+            </div>
+          </div>
+          <div class="blocks_title">
+            <h2>
+              Join <span>the professionals</span> and
+              <span
+                >get your <br />
+                share of the pie!</span
+              >
+            </h2>
+          </div>
+          <div class="main_btn">
+            <a href="#"><button>Join</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          infinite: true,
+        });
+
+        $(".custom-prev").on("click", function () {
+          $(".slider").slick("slickPrev");
+        });
+
+        $(".custom-next").on("click", function () {
+          $(".slider").slick("slickNext");
+        });
+      });
+    </script>
+
+    <div class="modal_wrapper">
+      <div class="modal">
+        <h2>Выберите язык | Select a language</h2>
+        <div class="lang_selector">
+          <div class="lang_option " data-lang="ru">
+            <p>Ру</p>
+          </div>
+          <div class="lang_option active_lang_selector" data-lang="en">
+            <p>EN</p>
+          </div>
+        </div>
+        <div class="main_btn">
+          <button id="continueBtn">go on</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleModal() {
+        document
+          .querySelector(".modal_wrapper")
+          .classList.toggle("modal_wrapper_visible");
+      }
+
+      let selectedLanguage = "en";
+      const langOptions = document.querySelectorAll(".lang_option");
+      langOptions.forEach((option) => {
+        option.addEventListener("click", function () {
+          langOptions.forEach((el) =>
+            el.classList.remove("active_lang_selector")
+          );
+          option.classList.add("active_lang_selector");
+          selectedLanguage = option.getAttribute("data-lang");
+        });
+      });
+
+      const continueBtn = document.getElementById("continueBtn");
+      continueBtn.addEventListener("click", function () {
+        if (selectedLanguage === "en") {
+          toggleModal(); 
+        } else if (selectedLanguage === "ru") {
+          window.location.href = "./index.html";
+        }
+      });
+    </script>
+  </body>
+</html>
